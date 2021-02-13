@@ -25,17 +25,17 @@ let g:ayu#palette.error              = {'light': "#F51818",  'mirage': "#FF3333"
 " some of these colors should have transparency. Since this is not possible,
 " they only 'emulate' their colors as if they were shown on the regular
 " backaground color
-let g:ayu#palette.line               = {'light': "#EFF0F1",  'mirage': "#191E2A",  'dark': "#00010A"}
-let g:ayu#palette.panel_bg           = {'light': "#FFFFFF",  'mirage': "#232834",  'dark': "#0D1016"}
+let g:ayu#palette.line               = {'light': "#F3F3F3",  'mirage': "#242B38",  'dark': "#151A1E"}
+let g:ayu#palette.panel_bg           = {'light': "#FFFFFF",  'mirage': "#272D38",  'dark': "#14191F"}
 let g:ayu#palette.panel_shadow       = {'light': "#CCCED0",  'mirage': "#141925",  'dark': "#00010A"}
 let g:ayu#palette.panel_border       = {'light': "#F0F0F0",  'mirage': "#101521",  'dark': "#000000"}
 let g:ayu#palette.gutter_normal      = {'light': "#CDD0D3",  'mirage': "#404755",  'dark': "#323945"}
 let g:ayu#palette.gutter_active      = {'light': "#A0A6AC",  'mirage': "#5F687A",  'dark': "#464D5E"}
-let g:ayu#palette.selection_bg       = {'light': "#D1E4F4",  'mirage': "#33415E",  'dark': "#273747"}
+let g:ayu#palette.selection_bg       = {'light': "#F0EEE4",  'mirage': "#343F4C",  'dark': "#253340"}
 let g:ayu#palette.selection_inactive = {'light': "#E7E8E9",  'mirage': "#323A4C",  'dark': "#1B2733"}
 let g:ayu#palette.selection_border   = {'light': "#E1E1E2",  'mirage': "#232A4C",  'dark': "#304357"}
 let g:ayu#palette.guide_active       = {'light': "#D3D5D8",  'mirage': "#576070",  'dark': "#393F4D"}
-let g:ayu#palette.guide_normal       = {'light': "#E6E7E9",  'mirage': "#383E4C",  'dark': "#242A35"}
+let g:ayu#palette.guide_normal       = {'light': "#D9D8D7",  'mirage': "#3D4751",  'dark': "#2D3640"}
 
 " vcs
 let g:ayu#palette.vcs_added          = {'light': "#99BF4D",  'mirage': "#A6CC70",  'dark': "#91B362"}

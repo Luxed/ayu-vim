@@ -45,7 +45,7 @@ call s:hi('LineNr', 'guide_normal', '')
 
 call s:hi('Directory', 'func', '')
 call s:hi('ErrorMsg', 'fg', 'error', 'standout')
-call s:hi('VertSplit', 'panel_bg', 'panel_bg')
+call s:hi('VertSplit', 'bg', '')
 call s:hi('Folded', 'fg_idle', 'panel_bg')
 call s:hi('FoldColumn', '', s:sign_bg())
 call s:hi('SignColumn', '', s:sign_bg())
