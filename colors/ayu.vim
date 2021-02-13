@@ -239,10 +239,6 @@ call s:hi('gitcommitSummary', 'fg', '')
 call s:hi('gitcommitOverflow', 'markup', '')
 " }}}
 
-" Startify:" {{{
-call s:hi('StartifyFile', 'fg', '')
-" }}}
-
 " Vim:" {{{
 call s:hi('vimUserFunc', 'func', '')
 hi! link vimVar NONE
