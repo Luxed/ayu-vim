@@ -231,12 +231,13 @@ call ayu#hi('typescriptBOMLocationMethod', 'func', '')
 
 " TreeSitter:" {{{
 call ayu#hi('TSInclude', 'accent', '')
-call ayu#hi('TSParameter', 'fg', '')
+call ayu#hi('TSParameter', 'entity', '')
 call ayu#hi('TSField', 'tag', '')
 call ayu#hi('TSAttribute', 'markup', '')
 call ayu#hi('TSVariableBuiltin', 'tag', '', 'italic')
 call ayu#hi('TSConstBuiltin', 'constant', '')
 call ayu#hi('TSStringRegex', 'regexp', '')
+call ayu#hi('TSPunctDelimiter', 'accent', '')
 " }}}
 
 " Fugitive:" {{{
