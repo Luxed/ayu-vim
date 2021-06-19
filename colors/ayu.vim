@@ -52,9 +52,9 @@ call ayu#hi('SpellRare', 'regexp', '', 'underline')
 call ayu#hi('StatusLine', 'fg', 'panel_bg')
 call ayu#hi('StatusLineNC', 'fg_idle', 'panel_bg')
 call ayu#hi('WildMenu', 'fg', 'markup')
-call ayu#hi('TabLine', 'comment', 'panel_shadow')
-call ayu#hi('TabLineFill', 'fg', 'panel_border')
-call ayu#hi('TabLineSel', 'fg', 'bg')
+
+call ayu#hi('TabLine', 'fg_idle', 'panel_bg')
+
 call ayu#hi('Title', 'keyword', '')
 call ayu#hi('Visual', '', 'selection_inactive')
 call ayu#hi('WarningMsg', 'warning', '')
