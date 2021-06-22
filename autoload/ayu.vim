@@ -1,3 +1,5 @@
+let s:experimental_colors = get(g:, 'ayu_experimental_colors', 0)
+
 " Official Palette:" {{{
 let g:ayu#palette = {}
 
@@ -49,6 +51,18 @@ let g:ayu#palette.vcs_removed        = {'light': "#F27983",  'mirage': "#F27983"
 
 let g:ayu#palette.fg_idle = {'light': "#828C99",  'mirage': "#607080",  'dark': "#3E4B59"}
 let g:ayu#palette.warning = {'light': "#FA8D3E",  'mirage': "#FFA759",  'dark': "#FF8F40"}
+
+if s:experimental_colors
+    let g:ayu#palette.keyword_func = {'light': "#3EABFA", 'mirage': "#80AAFF", 'dark': "#40B0FF"}
+    let g:ayu#palette.repeat       = {'light': "#FA3E4D", 'mirage': "#FF595E", 'dark': "#FF4051"}
+    let g:ayu#palette.conditional  = {'light': "#F9700C", 'mirage': "#FF8214", 'dark': "#FF710D"}
+    let g:ayu#palette.import       = {'light': "#FF7E0D", 'mirage': "#FFBB33", 'dark': "#E0A123"}
+else
+    let g:ayu#palette.keyword_func = g:ayu#palette.keyword
+    let g:ayu#palette.repeat       = g:ayu#palette.keyword
+    let g:ayu#palette.conditional  = g:ayu#palette.keyword
+    let g:ayu#palette.import       = g:ayu#palette.accent
+endif
 
 " }}}
 
