@@ -323,6 +323,32 @@ call ayu#hi('xmlEqual', 'operator', '')
 
 " }}}
 
+" HTML:" {{{
+
+hi def htmlBold                term=bold cterm=bold gui=bold
+hi def htmlBoldUnderline       term=bold,underline cterm=bold,underline gui=bold,underline
+hi def htmlBoldItalic          term=bold,italic cterm=bold,italic gui=bold,italic
+hi def htmlBoldUnderlineItalic term=bold,italic,underline cterm=bold,italic,underline gui=bold,italic,underline
+hi def htmlUnderline           term=underline cterm=underline gui=underline
+hi def htmlUnderlineItalic     term=italic,underline cterm=italic,underline gui=italic,underline
+hi def htmlItalic              term=italic cterm=italic gui=italic
+
+" open - close tag
+call ayu#hi('htmlTag', 'tag', '')
+call ayu#hi('htmlTagName', 'entity', '')
+call ayu#hi('htmlTagN', 'entity', '')
+call ayu#hi('htmlEndTag', 'tag', '')
+
+" attribute
+call ayu#hi('htmlArg', 'operator', '')
+
+" text inner tag
+hi link htmlH1 Normal
+hi link htmlTitle Normal
+
+" }}}
+
+
 " INI:" {{{
 call ayu#hi('dosiniHeader', 'keyword', '')
 " }}}
