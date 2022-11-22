@@ -418,6 +418,25 @@ call ayu#hi('xmlEqual', 'syntax_operator', '')
 
 " }}}
 
+" HTML:" {{{
+
+" open - close tag
+call ayu#hi('htmlTag', 'tag', '')
+call ayu#hi('htmlTagName', 'entity', '')
+call ayu#hi('htmlTagN', 'entity', '')
+call ayu#hi('htmlEndTag', 'tag', '')
+
+" attribute
+call ayu#hi('htmlArg', 'operator', '')
+
+" text inner tag
+hi link htmlLink Normal
+hi link htmlH1 Normal
+hi link htmlTitle Normal
+
+" }}}
+
+
 " INI:" {{{
 call ayu#hi('dosiniHeader', 'syntax_keyword', '')
 " }}}
