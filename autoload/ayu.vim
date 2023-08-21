@@ -85,5 +85,8 @@ function! ayu#hi(group_name, fg_color_name, bg_color_name, ...)
     let l:fmt_arg = get(a:, '1')
     let l:fmt = l:fmt_arg !=# '0' && l:fmt_arg !=# '' ? l:fmt_arg : 'NONE'
 
-    execute join(['hi!', a:group_name, 'guifg=' . l:fg_color, 'guibg=' . l:bg_color, 'gui=' . l:fmt, 'cterm=' . l:fmt], ' ')
+    let l:fmt_color_arg = get(a:, '2')
+    let l:fmt_color = l:fmt_color_arg !=# '0' && l:fmt_color_arg !=# '' ? ayu#get_color(l:fmt_color_arg) : 'NONE'
+
+    execute join(['hi!', a:group_name, 'guifg=' . l:fg_color, 'guibg=' . l:bg_color, 'gui=' . l:fmt, 'guisp=' . l:fmt_color, 'cterm=' . l:fmt], ' ')
 endfunction

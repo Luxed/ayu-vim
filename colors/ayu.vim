@@ -43,7 +43,9 @@ call ayu#hi('IncSearch', '', 'editor_findMatch_active')
 call ayu#hi('SpecialKey', 'common_accent', '')
 call ayu#hi('SpellCap', 'syntax_tag', '', 'underline')
 call ayu#hi('SpellLocal', 'syntax_keyword', '', 'underline')
-call ayu#hi('SpellBad', 'common_error', '', 'underline')
+" TODO: This only works on supported terminals. I.E. it works on Kitty but not
+" alacritty
+call ayu#hi('SpellBad', '', '', 'undercurl', 'common_error')
 call ayu#hi('SpellRare', 'syntax_regexp', '', 'underline')
 call ayu#hi('StatusLine', 'editor_fg', 'ui_panel_bg')
 call ayu#hi('StatusLineNC', 'extended_fg_idle', 'ui_panel_bg')
